@@ -1,0 +1,38 @@
+{% extends "home/base.html" %} {% block content %} {% load static %}
+
+<section class="container">
+  <div
+    class="heading text-center mx-auto"
+    style="padding-top: 15vh; padding-bottom: 40px"
+  >
+    <h3 class="head text-center" style="color: #1e1c59">Our Blogs</h3>
+  </div>
+  <div class="fea-gd-vv text-center row">
+    {%for b in allBlog%}
+    <div class="col-lg-4 col-md-6" style="min-height: 400px">
+      <div
+        class="border p-3 shadow-sm rounded my-2 d-flex flex-column justify-content-between"
+        style="height: 100%"
+      >
+        <a href="services.html"
+          ><img src="{{b.descimage.url}}" class="img-responsive" alt=""
+        /></a>
+        <div class="float-lt feature-gd">
+          <h3 style="font-size: 22px" class="my-3">
+            <a href="services.html">{{b.title}}</a>
+          </h3>
+          <!--<p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>-->
+          <a class="btn btn-secondary btn-theme4" href="/singleblog/{{b.id}}">
+            Read More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    {%endfor%}
+  </div>
+</section>
+<br />
+<br />
+
+{% endblock content %}

@@ -1,0 +1,116 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+{% extends "home/base.html" %} {% block content %}
+<!-- contact form -->
+<section class="w3l-contacts-2" id="contact">
+  <div
+    class="heading text-center mx-auto"
+    style="padding-top: 15vh; padding-bottom: 40px"
+  >
+    <h3 class="head text-center" style="color: #1e1c59">Contact Us</h3>
+  </div>
+  <div class="contacts-main">
+    <div class="contant11-top-bg pb-5">
+      <div class="container py-md-3">
+        <div class="d-grid contact section-gap">
+          <div class="contact-info-left d-grid text-center">
+            <div class="contact-info">
+              <span class="fa fa-map-marker" aria-hidden="true"></span>
+              <h4>Address</h4>
+              <p>
+                G-8 & 9, Urvashi Complex, 3, MY Hospital Rd, Jaora Compound,
+                Opp. MYH Tempo Stand, Indore Madhya Pradesh 452001
+              </p>
+            </div>
+            <div class="contact-info">
+              <span class="fa fa-mobile" aria-hidden="true"></span>
+              <h4>Phone</h4>
+              <p><a href="tel:9926301666">9926301666</a></p>
+              <!--<p><a href="tel:+44 987 654 321">+44 987 654 321</a></p>-->
+            </div>
+            <div class="contact-info">
+              <span class="fa fa-envelope-o" aria-hidden="true"></span>
+              <h4>Mail</h4>
+              <p>
+                <a href="denmedplanetorium@gmail.com" class="email">
+                  denmedplanetorium@gmail.com</a
+                >
+              </p>
+              <!--<p><a href="mailto:mail@example.com" class="email">mail@example.com</a></p>-->
+            </div>
+            <!--<div class="contact-info">
+							<span class="fa fa-print" aria-hidden="true"></span>
+							<h4>Fax</h4>
+							<p><a href="tel:+44 7834 857829">+44 7834 857829</a></p>
+							<p><a href="tel:+44 987 654 321">+44 987 654 321</a></p>
+						</div>-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-41-mian pb-5">
+      <div class="container pb-md-3">
+        <div class="d-grid align-form-map">
+          <div class="form-inner-cont">
+            <h3 class="cont-head">Contact Us</h3>
+            <form
+              action="https://sendmail.w3layouts.com/submitForm"
+              method="post"
+              class="main-input"
+            >
+              <div class="top-inputs d-grid">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="w3lName"
+                  id="w3lName"
+                  required=""
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  id="w3lSender"
+                  required=""
+                />
+              </div>
+              <input
+                type="text"
+                placeholder="Phone Number"
+                name="w3lName"
+                id="w3lName"
+                required=""
+              />
+              <textarea
+                placeholder="Message"
+                name="w3lMessage"
+                id="w3lMessage"
+                required=""
+              ></textarea>
+              <div class="text-right">
+                <button type="submit" class="btn btn-theme3">Send Now</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="contact-right">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3680.4592506912977!2d75.87811551529298!3d22.711165585111733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20G-8%20%26%209%2C%20Urvashi%20Complex%2C%203%2C%20MY%20Hospital%20Rd%2C%20Jaora%20Compound%2C%20Opp.%20MYH%20Tempo%20Stand%2C%20Indore%20Madhya%20Pradesh%20452001!5e0!3m2!1sen!2sin!4v1638047795771!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- //contact form -->
+
+<!-- grids block 5 -->
+{% endblock content %}

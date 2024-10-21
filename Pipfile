@@ -1,0 +1,48 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+appdirs = "==1.4.4"
+attrs = "==21.2.0"
+beautifulsoup4 = "==4.9.3"
+certifi = "==2021.5.30"
+charset-normalizer = "==2.0.4"
+configparser = "==5.0.2"
+distlib = "==0.3.1"
+filelock = "==3.0.12"
+httplib2 = "==0.20.1"
+idna = "==3.2"
+mysql-connector-python = "==8.0.25"
+pdf2image = "==1.16.0"
+pygooglevoice = "==0.5.2"
+pyparsing = "==2.4.7"
+pyperclip = "==1.8.2"
+pyrsistent = "==0.17.3"
+pytweening = "==1.0.3"
+pywhatkit = "==5.1"
+requests = "==2.26.0"
+six = "==1.16.0"
+soupsieve = "==2.2.1"
+textmagic = "==2.0.3"
+tornado = "==6.1"
+traitlets = "==5.0.5"
+urllib3 = "==1.26.6"
+virtualenv = "==20.4.7"
+virtualenvwrapper-win = "==1.2.6"
+wcwidth = "==0.2.5"
+wikipedia = "==1.4.0"
+ipython_genutils = "==0.2.0"
+MouseInfo = "==0.1.3"
+Pillow = "==8.3.1"
+PyAutoGUI = "==0.9.53"
+PyGetWindow = "==0.0.9"
+PyMsgBox = "==1.0.9"
+PyRect = "==0.1.4"
+PyScreeze = "==0.1.27"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

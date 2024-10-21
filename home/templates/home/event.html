@@ -1,0 +1,32 @@
+{% extends "home/base.html" %} {% block content %} {% load static %}
+
+<section class="container">
+  <div class="heading text-center mx-auto" style="padding-top: 15vh">
+    <h3 class="head text-center" style="color: #1e1c59">Events</h3>
+  </div>
+  <div class="fea-gd-vv text-center row">
+    {%for e in events%}
+    <div class="col-lg-4 col-md-6">
+      <div class="border p-3 shadow-sm rounded my-2">
+        <a href="services.html"
+          ><img src="{{e.descimage.url}}" class="img-responsive" alt=""
+        /></a>
+        <div class="float-lt feature-gd">
+          <h3 style="font-size: 22px" class="my-3">
+            <a href="services.html">{{e.title}}</a>
+          </h3>
+          <!--<p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>-->
+          <a class="btn btn-secondary btn-theme4" href="/singleevent/{{e.id}}">
+            Read More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    {%endfor%}
+  </div>
+</section>
+<br />
+<br />
+
+{% endblock content %}

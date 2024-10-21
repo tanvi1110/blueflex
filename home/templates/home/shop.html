@@ -1,0 +1,42 @@
+{% extends "home/base.html" %} {% block content %}
+
+<section class="w3l-content-with-photo-4" id="about">
+  <div
+    class="heading text-center mx-auto"
+    style="padding-top: 15vh; padding-bottom: 40px"
+  >
+    <h3 class="head text-center" style="color: #1e1c59">Our Products</h3>
+  </div>
+  <div id="content-with-photo4-block">
+    <div class="container py-md-3">
+      <div class="cwp4-two row my-4 mx-0">
+        <div class="cwp4-image col-lg-6 mt-lg-0 mt-5">
+          <img src="media/image/1.png" class="img-fluid" alt="" />
+          <br />
+          <a href="{% url 'bluefix' %}" class="mt-4"
+            ><h4 class="mt-4">BlueFix</h4></a
+          >
+        </div>
+        <div class="cwp4-image col-lg-6 mt-lg-0 mt-5">
+          <img src="media/image/2.png" class="img-fluid" alt="" />
+          <br />
+          <a href="{% url 'bluescan' %}"><h4 class="mt-4">BlueScan</h4></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .container h3 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+  a h4 {
+    font-size: 24px;
+  }
+</style>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+
+{% endblock content %}

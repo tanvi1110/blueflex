@@ -1,0 +1,64 @@
+{% extends "home/base.html" %} {% block content %}
+<section class="w3l-about-breadcrum">
+  <div class="breadcrum-bg">
+    <div class="container py-5">
+      <p><a href="index.html">Home</a> &nbsp; / &nbsp; Search Results</p>
+      <!-- <h2 class="my-3">Our Motive</h2>
+     <p>>A company involved in service
+        <br>
+         We're thriving and building better products</p> -->
+    </div>
+  </div>
+</section>
+<div class="fea-gd-vv text-center row mt-5 pt-3">
+  {% for p in products %}
+  <div
+    class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center"
+  >
+    <div class="float-top">
+      <a href="services.html"
+        ><img src="{{p.productimg.url}}" class="img-responsive" alt=""
+      /></a>
+      <div class="float-lt feature-gd">
+        <h3><a href="services.html">{{p.title|truncatechars:12}}</a></h3>
+        <!--<p> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>-->
+        <a class="btn btn-secondary btn-theme4 mt-4" href="/single/{{p.id}}">
+          More Details</a
+        >
+      </div>
+    </div>
+  </div>
+
+  {%endfor%}
+
+  <!--<div class="col-lg-4 col-md-6 mt-lg-0 mt-5">	
+                        <div class="float-top-1 text-left pl-4 pr-4 py-5">	
+                            <h4 class="">Jobs</h4>
+                            <p class="mt-2"> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
+                            <div class="top-right mt-4 pt-2">
+                                <div class="icon-left pt-1">
+                                    <span class="fa fa-arrow-right"></span>
+                                </div>
+                                <div class="icon-text-left">
+                                    <h3 class=""><a href="services.html">Metal Working Tools</a> </h3>
+                                <p class="mt-2"> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
+                                </div>
+                            </div>
+                            <div class="top-right mt-3">
+                                <div class="icon-left pt-1">
+                                    <span class="fa fa-arrow-right"></span>
+                                </div>
+                                <div class="icon-text-left">
+                                    <h3 class=""><a href="services.html">Metal Working Tools</a> </h3>
+                                <p class="mt-2"> Consectetur adipisicingelit, sed do eiusmod tempor incididunt ut labore et.dolor sit amet </p>
+                                </div>
+                            </div>
+                            </div>	
+                    </div>-->
+</div>
+
+<br />
+<br />
+<br />
+<br />
+{% endblock content %}
